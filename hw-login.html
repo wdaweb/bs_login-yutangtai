@@ -5,10 +5,90 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/all.min.css">
   <title>hw-login</title>
+  <style>
+    @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+    html,
+    body{
+      width: 100vw;
+      height: 100vh;
+      background: url(./image/plants.jpg)no-repeat center/cover;
+    }
+    .h4{
+      color: rgba(145, 145, 145, 0.76);
+    }
+    .box{
+      width: 300px;
+      height: 300px;
+
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 0.75rem;
+      position: relative;
+    }
+    .icon{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(10, 92, 117, 0.562);
+      text-align: center;
+      line-height: 55px;
+
+      position: absolute;
+      left: 50%;
+      top: -18%;
+      transform: translate(-50%);
+    }
+    .form-check-input {
+      height: 1.21rem;
+    }
+
+  </style>
 </head>
-<body>
-  
+<body>  
+  <div class="container w-50 h-100 m-0 d-flex align-items-center justify-content-center">
+    <div class="box row  m-0">
+        <div class="col m-auto">
+          <div class="icon"><i class="far fa-user" style="color: rgba(255, 255, 255, 0.76); font-size: 1.5rem;"></i></div>
+          <div class="h4 text-center mb-3 mt-2">Sign In</div>
+          <form>
+            <div class="form-group row">
+              <label for="userName" class="col-form-label"></label>
+              <div class="col-sm-10 m-auto">
+                <input type="text" class="form-control" id="userName" placeholder="&#61447; Username" style="font-family:Arial, FontAwesome;">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-form-label"></label>
+              <div class="col-sm-10 m-auto">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="&#61475; Password" style="font-family:Arial, FontAwesome;">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10 m-auto">
+                <button type="submit" class="btn btn-info w-100">Login</button>
+              </div>
+            </div>          
+            <div class="form-group row">
+              <div class="col-sm-6 text-center">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">                    
+                  <label class="form-check-label" for="gridCheck1">
+                    <small>Remember me</small>
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-6 text-center">
+                <div class="link">                  
+                  <a href="#"><small>Forget password?</small></a>                  
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/bootstrap5.bundle.min.js"></script>
 </body>
