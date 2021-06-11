@@ -5,10 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>hw-login</title>
   <style>
-    @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
     html,
     body{
       width: 100vw;
@@ -42,6 +41,45 @@
     .form-check-input {
       height: 1.21rem;
     }
+    .form-control{
+      text-indent: 20px;
+    }
+    .form-control::placeholder{
+      color: rgba(155, 155, 155, 0.5);
+    }
+    .userNameClass{
+      position: relative;
+      display: inline-block;
+    }
+    .userNameClass:before{
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900; 
+      content: "\f007";
+      font-size: 14px;
+      color: rgba(155, 155, 155, 0.5);
+
+      position: absolute;
+      left: 52px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 99;
+    }    
+    .passwordClass{
+      position: relative;
+    }
+    .passwordClass:before{
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900; 
+      content: "\f13e";
+      font-size: 14px;
+      color: rgba(155, 155, 155, 0.5);
+
+      position: absolute;
+      left: 52px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 99;
+    }
 
   </style>
 </head>
@@ -53,15 +91,15 @@
           <div class="h4 text-center mb-3 mt-2">Sign In</div>
           <form>
             <div class="form-group row">
-              <label for="userName" class="col-form-label"></label>
+              <label for="userName" class="col-form-label userNameClass "></label>
               <div class="col-sm-10 m-auto">
-                <input type="text" class="form-control" id="userName" placeholder="&#61447; Username" style="font-family:Arial, FontAwesome;">
+                <input type="text" class="form-control" id="userName" placeholder="Username">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputPassword3" class="col-form-label"></label>
+              <label for="inputPassword" class="col-form-label passwordClass"></label>
               <div class="col-sm-10 m-auto">
-                <input type="password" class="form-control" id="inputPassword3" placeholder="&#61475; Password" style="font-family:Arial, FontAwesome;">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
               </div>
             </div>
             <div class="form-group row">
